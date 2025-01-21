@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticalTest02MainActivityv10">
+
+    <!-- Text Input pentru numele pokemonului -->
+    <EditText
+        android:id="@+id/pokemon_name_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pokemon Name"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Buton pentru inițierea cererii -->
+    <Button
+        android:id="@+id/fetch_pokemon_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fetch Pokemon"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_name_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Imaginea pokemonului -->
+    <ImageView
+        android:id="@+id/pokemon_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toBottomOf="@id/fetch_pokemon_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Text pentru tipurile pokemonului -->
+    <TextView
+        android:id="@+id/pokemon_types"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Types:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Text pentru abilitățile pokemonului -->
+    <TextView
+        android:id="@+id/pokemon_abilities"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Abilities:"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_types"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Buton pentru navigarea la activitatea 5 -->
+    <Button
+        android:id="@+id/navigate_to_activity5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go to Problem 5 Activity"
+        app:layout_constraintTop_toBottomOf="@id/pokemon_abilities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
